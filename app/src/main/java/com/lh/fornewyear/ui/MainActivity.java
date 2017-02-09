@@ -1,13 +1,20 @@
-package com.lh.fornewyear;
+package com.lh.fornewyear.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
+
+import com.lh.fornewyear.R;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+//        new BaseViewHelper.Builder(this)
     }
+
+
 }
